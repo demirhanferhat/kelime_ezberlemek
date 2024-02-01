@@ -198,9 +198,9 @@ class _CreateListState extends State<CreateList> {
 
         debugPrint("TOAST MESSAGE => Liste oluşturuldu");
         _listName.clear();
-        wordTextEditingList.forEach((element) {
+        for (var element in wordTextEditingList) {
           element.clear();
-        });
+        }
       } else {
         debugPrint("TOAST MESSAGE => Boş alanları doldurun veya silin");
       }
